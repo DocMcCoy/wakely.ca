@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Wakely\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

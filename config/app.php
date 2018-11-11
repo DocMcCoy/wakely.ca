@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Wakely'),
 
     /*
     |--------------------------------------------------------------------------
@@ -167,11 +167,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Wakely\Providers\AppServiceProvider::class,
+        Wakely\Providers\AuthServiceProvider::class,
+        // Wakely\Providers\BroadcastServiceProvider::class,
+        Wakely\Providers\EventServiceProvider::class,
+        Wakely\Providers\RouteServiceProvider::class,
 
     ],
 
