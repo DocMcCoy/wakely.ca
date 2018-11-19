@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('splash');
 });
 
+Route::get('/card', function () {
+    return view('card');
+});
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
