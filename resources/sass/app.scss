@@ -137,7 +137,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr minmax(0,300px) 100px 100px minmax(0, 300px) 1fr;
   grid-template-rows: repeat(3, 250px);
-  grid-gap: 12px;
+  grid-gap: 50px;
   margin: 0 12px;
 }
 
