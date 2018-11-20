@@ -27,9 +27,9 @@
 </head>
 <body>
     <div class="card-container">
-        <div class="card-image-left"></div>
+        <div class="card-image-left"><img src="/img/code1.jpg" alt=""></div>
         <div class="card-description-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus at minima hic. Doloremque quam ducimus asperiores distinctio corporis reprehenderit velit alias enim, sed quo fugiat et eligendi nemo quae aperiam.</div>
-        <div class="card-image-right"></div>
+        <div class="card-image-right"><img src="/img/code2.jpg" alt=""></div>
         <div class="card-description-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestias deserunt saepe voluptas quos pariatur voluptatibus, tenetur illo ipsam at sapiente sequi autem, natus sit, alias quaerat distinctio beatae quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, unde laudantium ex necessitatibus aliquid et ad quas eius fugit quis dolore, veniam illum quidem, temporibus totam corporis rerum consectetur alias.</div>
         
     </div> 

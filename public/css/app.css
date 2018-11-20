@@ -1,4 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);/*!
+@font-face {
+  font-family: DDCHardware;
+  src: url(/fonts/DDCHardware-Compressed.otf);
+}
+
+/*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -10498,6 +10503,7 @@ a:hover {
 body {
   color: #fff;
   background: #333333;
+  font-family: 'Source Code Pro', Consolas, monospace;
 }
 
 .wrapper {
@@ -10527,9 +10533,9 @@ header img {
 
 nav {
   grid-column: 1/4;
-  -ms-flex-item-align: center;
-      align-self: center;
-  justify-self: center;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  justify-self: stretch;
   background: #1e1e1e;
 }
 
@@ -10547,21 +10553,24 @@ nav ul {
 
 nav li {
   text-transform: uppercase;
+  font-family: DDCHardware;
+  font-size: 2em;
 }
 
 main {
+  min-height: 70vh;
   grid-column: 2/3;
   -ms-flex-item-align: center;
       align-self: center;
   justify-self: center;
 }
 
-main h1 {
-  margin-left: 10vw;
-}
-
-main h2 {
-  margin-left: 10vw;
+main h1,
+main h2,
+main h3 {
+  font-family: DDCHardware;
+  text-shadow: 1px 1px 10px #1e1e1e;
+  margin-left: 5vw;
 }
 
 main article {
@@ -10645,6 +10654,13 @@ footer {
   border-radius: 5px;
 }
 
+.card-image-left img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .card-description-left {
   background: black;
   justify-self: end;
@@ -10664,6 +10680,13 @@ footer {
   border-radius: 5px;
 }
 
+.card-image-right img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .card-description-right {
   background: black;
   justify-self: start;
@@ -10672,6 +10695,63 @@ footer {
   grid-column: 3/6;
   grid-row: 1;
   border-radius: 5px;
+}
+
+.fourohfour {
+  min-height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr -webkit-min-content 1fr;
+  grid-template-columns: 1fr min-content 1fr;
+  grid-template-rows: 1fr 30vh 1fr;
+  grid-template-areas: ". . ." ". a ." ". b .";
+  align-self: center;
+}
+
+.fourohfour h2 {
+  padding: 0;
+  margin: 0;
+  grid-area: a;
+  font-size: 30vh;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.fourohfour div {
+  grid-area: b;
+  justify-self: center;
+}
+
+.about-main {
+  grid-column: 2/3;
+  justify-self: stretch;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+.about-main img {
+  height: 40vw;
+  max-height: 300px;
+}
+
+#talkbubble {
+  width: 120px;
+  height: 80px;
+  background: red;
+  position: relative;
+  border-radius: 10px;
+}
+
+#talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid red;
+  border-bottom: 13px solid transparent;
 }
 
 @media only screen and (min-width: 766px) {
