@@ -10549,9 +10549,11 @@ nav ul {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 0 auto;
 }
 
 nav li {
+  margin: 0 auto;
   text-transform: uppercase;
   font-family: DDCHardware;
   font-size: 2em;
@@ -10702,7 +10704,8 @@ footer {
   display: grid;
   grid-template-columns: 1fr -webkit-min-content 1fr;
   grid-template-columns: 1fr min-content 1fr;
-  grid-template-rows: 1fr 30vh 1fr;
+  grid-template-rows: 1fr -webkit-max-content 1fr;
+  grid-template-rows: 1fr max-content 1fr;
   grid-template-areas: ". . ." ". a ." ". b .";
   align-self: center;
 }
@@ -10715,10 +10718,15 @@ footer {
   justify-self: center;
   -ms-flex-item-align: center;
       align-self: center;
+  background: url(/img/404.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .fourohfour div {
   grid-area: b;
+  margin-top: 20px;
   justify-self: center;
 }
 
