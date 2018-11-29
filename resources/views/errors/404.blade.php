@@ -5,7 +5,7 @@
 @endsection
 
 @section('top-nav')
-<li class="brackets"><span class="active">Error</span></li>
+<li><span class="active">Error</span></li>
 <li class="brackets"><a href="/">Go Back</a></li>
 @endsection
 

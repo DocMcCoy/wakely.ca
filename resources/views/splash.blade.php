@@ -5,7 +5,7 @@
 @endsection
 
 @section ('top-nav')
-<li class="brackets"><a class="active" href="/">Home</a></li>
+<li><a class="active" href="/">Home</a></li>
 <li class="brackets"><a href="/about">About</a></li>
 <li class="brackets"><a href="/assignments">Assignments</a></li>
 <li class="brackets"><a href="/projects">Personal Projects</a></li>
@@ -15,18 +15,20 @@
 @section('content')
 <!-- Content Container -->
 <main>
-    <summary>
-        <div class="banner">
+    <summary class="wrapper">
+        <div class="headings">
             <h1>Welcome to Wakely.ca</h1>
             <h2>Hello World! (aka - beta testing in public)</h2>
         </div>
-
-        <p>
-            Welcome to my website! I'm getting this portfolio website off the ground by including my class exercises and assignments that I've completed for my Web Dev course that I'm taking at SAIT. I've also included some of the side projects that I've been working on before, during and after this course is over.
-        </p>
-        <p>I hope you enjoy what you are about to witness.</p>
+        <div class="content">
+            <p>Welcome to my website! I'm getting this portfolio website off the ground by including my class exercises and assignments that I've completed for my Web Dev course that I'm taking at SAIT. I've also included some of the side projects that I've been working on before, during and after this course is over.</p>
+            <p>I hope you enjoy what you are about to witness.</p>
+        </div>
+        <div class="summary-image">
+        </div>
+        
     </summary>
-    <div class="banner">
+    <div>
         <h3>About Me</h3>
     </div> 
         <article>

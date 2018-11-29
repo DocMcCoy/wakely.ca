@@ -6,7 +6,7 @@
 
 @section ('top-nav')
 <li class="brackets"><a href="/">Home</a></li>
-<li class="brackets"><a class="active" href="/about">About</a></li>
+<li><a class="active" href="/about">About</a></li>
 <li class="brackets"><a href="/assignments">Assignments</a></li>
 <li class="brackets"><a href="/projects">Personal Projects</a></li>
 <li class="brackets"><a href="/contact">Contact</a></li>
