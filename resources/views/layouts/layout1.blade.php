@@ -19,7 +19,8 @@
     <!-- Fonts -->
     <link href="https://fonts.gstatic.com" rel="dns-prefetch">
     <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet" 
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+          crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 
     <!-- Styles -->
@@ -28,28 +29,29 @@
 
     <!-- Body Layout for Main Pages -->
 <body>
-    <div class="wrapper">
+    <div class="wrapper hero">
 
         <!-- Header Image / Personal Logo -->
         <header>
-            <img src="{{ asset('img/logo.svg') }}" alt="Wakely Logo" height="100px">
+            <img class="header-logo" src="{{ asset('img/logo.svg') }}" alt="Wakely Logo">
         </header>
 
         <!-- Sticky Nav Menu -->
         <nav>
             <ul>
-                <li class="brackets"><a href="/">Home</a></li>
-                <li class="brackets"><a href="/about">About</a></li>
-                <li class="brackets"><a href="/assignments">Assignments</a></li>
-                <li class="brackets"><a href="/projects">Personal Projects</a></li>
-                <li class="brackets"><a href="/contact">Contact</a></li>
+                @yield ('top-nav')
             </ul>
         </nav>
 
+        <div class="arrow bounce"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></div>
+        </div>
+
+    </div>
+
 @yield ('content')
 
-
         <!-- Footer Navigation & copyright -->
+    <div class="wrapper">
         <footer>
             <ul>                
                 <img src="{{ asset('img/logo.svg') }}" alt="Wakely Logo" height="50px">
@@ -57,7 +59,7 @@
                 <li><a href="mailto:david@wakely.ca">david@wakely.ca</a></li>
                 <li><a href="tel:1-403-708-6600">(403) 708-6600</a></li>
             </ul>
-                        <ul>
+            <ul>
                 <h5>School Assignments</h5>
             </ul>
             <ul>

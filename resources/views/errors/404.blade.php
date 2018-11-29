@@ -4,6 +4,11 @@
 <title>404 - {{ config('app.name', 'Wakely') }}</title>
 @endsection
 
+@section('top-nav')
+<li class="brackets"><span class="active">Error</span></li>
+<li class="brackets"><a href="/">Go Back</a></li>
+@endsection
+
 @section('content')
 <main>
     <div class="fourohfour">
