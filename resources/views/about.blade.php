@@ -1,7 +1,7 @@
 @extends ('layouts.layout1')
 
 @section ('title')
-<title>About {{ config('app.name', 'Wakely') }}</title>
+<title>About - {{ config('app.name', 'Wakely') }}</title>
 @endsection
 
 @section ('top-nav')
@@ -15,7 +15,11 @@
 @section ('content')
 <main class="about-main">
     <blockquote class="rectangle-speech-border">
-        <p>Testing some stuff.</p>
+        <p>Hi! I'm David Wakely. I'm building up this website currently. Excuse the mess as I get this thing up and running.</p>
+    </blockquote>
+    <img src="/img/profile-img.png" alt="" height="500px">
+    <blockquote class="rectangle-speech-border">
+        <p>Thanks for checking out the site! Be sure to follow me and Wakely Dev on social media. Check the links in the footer!</p>
     </blockquote>
     <img src="/img/profile-img.png" alt="" height="500px">
 </main>

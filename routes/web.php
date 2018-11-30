@@ -19,6 +19,18 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/assignments', function () {
+    return view('assign');
+});
+
+Route::get('/projects', function () {
+    return view('projects');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 Route::get('/card', function () {
     return view('card');
 });
