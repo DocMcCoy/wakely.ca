@@ -10527,7 +10527,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(/img/background.jpg);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.23) 40%, rgba(0, 0, 0, 0) 75%), url(/img/background.jpg);
   display: grid;
 }
 
@@ -10899,5 +10899,87 @@ footer {
 .bounce {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
+}
+
+/* ============================================================================================================================
+== RECTANGLE-BORDER STYLE WITH CURVE
+** ============================================================================================================================ */
+
+.rectangle-speech-border {
+  position: relative;
+  padding: 50px 15px;
+  margin: 1em 0 3em;
+  border: 10px solid #5a8f00;
+  text-align: center;
+  color: #333;
+  background: #fff;
+  /* css3 */
+  border-radius: 20px;
+}
+
+/* creates larger curve */
+
+.rectangle-speech-border:before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  bottom: -40px;
+  left: 50px;
+  width: 50px;
+  height: 30px;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: #5a8f00;
+  background: white;
+  /* css3 */
+  border-bottom-right-radius: 80px 50px;
+  /* reduce the damage in FF3.0 */
+  display: block;
+}
+
+/* creates smaller curve */
+
+.rectangle-speech-border:after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  bottom: -40px;
+  left: 50px;
+  width: 20px;
+  height: 30px;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: #5a8f00;
+  background: #333333;
+  /* css3 */
+  border-bottom-right-radius: 40px 50px;
+  /* reduce the damage in FF3.0 */
+  display: block;
+}
+
+/* creates a small circle to produce a rounded point where the two curves meet */
+
+.rectangle-speech-border > :first-child:before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 45px;
+  width: 10px;
+  height: 10px;
+  background: #5a8f00;
+  /* css3 */
+  border-radius: 10px;
+}
+
+/* creates a white rectangle to cover part of the oval border*/
+
+.rectangle-speech-border > :first-child:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 70px;
+  width: 20px;
+  height: 15px;
+  background: #fff;
 }
 

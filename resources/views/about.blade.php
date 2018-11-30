@@ -14,7 +14,9 @@
 
 @section ('content')
 <main class="about-main">
-    <div id="talk-bubble"></div>
+    <blockquote class="rectangle-speech-border">
+        <p>Testing some stuff.</p>
+    </blockquote>
     <img src="/img/profile-img.png" alt="" height="500px">
 </main>
 @endsection
