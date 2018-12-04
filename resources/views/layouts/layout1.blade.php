@@ -32,7 +32,7 @@
     <div class="wrapper hero">
 
         <!-- Header Image / Personal Logo -->
-        <header>
+        @yield ('hero-image')
             <img class="header-logo" src="{{ asset('img/logo.svg') }}" alt="Wakely Logo">
         </header>
 

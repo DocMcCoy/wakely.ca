@@ -4,6 +4,10 @@
 <title>About - {{ config('app.name', 'Wakely') }}</title>
 @endsection
 
+@section ('hero-image')
+<header class="about-image">
+@endsection
+
 @section ('top-nav')
 <li class="brackets"><a href="/">Home</a></li>
 <li><a class="active" href="/about">About</a></li>
