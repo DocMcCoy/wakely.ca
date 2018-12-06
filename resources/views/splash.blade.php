@@ -19,7 +19,7 @@
 @section('content')
 <!-- Content Container -->
 <main class="home-main">
-    <summary class="home-wrapper">
+    <section class="home-wrapper">
         <div class="headings">
             <h1>Welcome to Wakely.ca</h1>
             <h2>Hello World!</h2>
@@ -27,27 +27,32 @@
         </div>
         <div class="content">
             <p>Welcome to my website! I'm getting this portfolio website off the ground by including my class exercises and assignments that I've completed for my Web Dev course that I'm taking at SAIT. I've also included some of the side projects that I've been working on before, during and after this course is over.</p>
-            <p>I hope you enjoy what you are about to witness.</p>
+            <p>Below you can find my featured project, the project I'm most proud of or the project I'm currently working on.</p>
         </div>
+        <div class="headings">
+            <h3>Featured Project</h3>
+        </div>
+        <article class="content">
+            <p>To be honest ... I'm currently hammering this website together. This website is going to be part of my presentation for my SAIT Web Development course on Dec. 14th. If you see anything I should work on or any errors, I'd appreciate any heads up and any constructive criticism you have. Also be sure to cross your fingers and wish me well with this thing.</p>
+        </article>   
         <div class="summary-image">
+            <img src="/img/calgary-full-moon.jpg" alt="Full Moon Over Downtown Calgary circa 2018">
+            <span>Downtown Calgary circa February 2018 - Photo by Me - © <?php echo Date('Y') ?></span>
         </div>
-    </summary>
+    </section>
 
-    <div class="headings">
-        <h2>About Me</h2>
-    </div>
-    <div class="content">
-        <p>Here's my deal. I've always been very interested in computer technologies. Been building my own PCs since long before I could drink. Interned at one of the first ISPs in Calgary called Logical Solutions. Worked as service advisor for a computer repair company, self studied myself to get CompTia A+ certified and promoted to a computer tech. Switched gears for a while and did very well as an industrial electrician. Even there, was involved with talking to the PLCs (programmable logic controllers) that ran and controlled these sites.</p> 
-        <p>But I've been called back to my first love; computers, technology and the hug that brings it all together, the internet.</p>
-        <a href="/about"><p>Click here to see more...</p></a>
-    </div>
+    <section>
+        <div class="headings">
+            <h2>About Me</h2>
+        </div>
+        <article class="content">
+            <p>Here's my deal. I'm a Calgary boy, born and mostly raised and I'm currently operating out of Calgary doing Web Development.</p>
+            <p>I've always been very interested in computer technologies. Been building my own PCs since long before I could drink. Interned at one of the first ISPs in Calgary called Logical Solutions. Worked as service advisor for a computer repair company, self studied myself to get CompTia A+ certified and promoted to a computer tech. Switched gears for a while and did very well as an industrial electrician. Even there, was involved with talking to the PLCs (programmable logic controllers) that ran and controlled these sites.</p> 
+            <p>But I've been called back to my first love; computers, technology and the hug that brings it all together, the internet.</p>
+            <a href="/about"><p>Click here to see more...</p></a>
+        </article>
+    </section>
 
-    <div class="headings">
-        <h3>Featured Project</h3>
-    </div>
 
-    <div class="content">
-        <p>To be honest ... I'm currently hammering this website together. This project is due on Dec. 14th</p>
-    </div>   
 </main>
 @endsection

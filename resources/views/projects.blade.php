@@ -19,7 +19,7 @@
 @section ('content')
 <main class="projects-main">
 <h2>Personal Projects</h2>
-    <section class="uo-project-card">
+    <a href="https://untitledoffroad.com"><section class="uo-project-card">
         <header class="uo-header">
             <h3>Untitled Offroad</h3>
         </header>
@@ -27,14 +27,14 @@
             <h4>Untitled Offroad</h4>
             <p>Something something about Untitled Offroad</p>
         </article>
-    </section>
-    <section class="pa-project-card">
+    </section></a>
+    <a href="https://peakadvisory.ca"><section class="pa-project-card">
         <header class="pa-header">
             <h3>Peak Advisory</h3>
         </header>
         <article class="pa-info">
             <p>Something something something aobut Peak Advisory</p>
         </article>
-    </section>
+    </section></a>
 </main>
 @endsection
