@@ -192,7 +192,7 @@ nav {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    object-position: 50% 0%;
+    object-position: 50% 50%;
     background-repeat: none;
   }
 
@@ -324,6 +324,7 @@ footer {
   grid-column: 1/4;
   grid-row: 2 / 4;
   border-radius: 5px;
+
   img {
     height: 100%;
     width: 100%;
@@ -465,7 +466,6 @@ footer {
   grid-column: 2/3;
   justify-self: stretch;
   align-self: stretch;
-  // display: grid;
 
   img {
     height: 40vw;
