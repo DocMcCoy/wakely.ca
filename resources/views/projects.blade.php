@@ -18,7 +18,11 @@
 
 @section ('content')
 <main class="projects-main">
-<h2>Personal Projects</h2>
+    <section>
+        <h2>Personal Projects</h2>
+        <p>These are projects that I have been working on outside of class. Some of them use Squarespace CMS</p>
+    </section>
+    
     <a href="https://untitledoffroad.com"><section class="uo-project-card">
         <header class="uo-header">
             <h3>Untitled Offroad</h3>
