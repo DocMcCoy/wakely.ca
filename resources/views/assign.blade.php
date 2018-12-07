@@ -18,6 +18,13 @@
 
 @section ('content')
 <main class="assign-main">
+
+<section>
+    <div class="headings">
+        <h2>Web Development Assignments from SAIT</h2>
+        <h3>aka - things I was forced to do ... and things I went above and beyond for my own edification</h3>
+    </div>
+</section>
 <h2>PHP</h2>
 <h3><a href="http://facebrick.ca" target="_blank">facebrick.ca</a></h3>
 <p>This is the final project that was asked for in our PHP course. This course introduced us to the world of PHP and also the idea of MVC.</p>
