@@ -19,7 +19,7 @@
 @section('content')
 <!-- Content Container -->
 <main class="home-main">
-    <section class="home-wrapper">
+    <section>
         <div class="headings">
             <h1>Welcome to Wakely.ca</h1>
             <h2>Hello World!</h2>
