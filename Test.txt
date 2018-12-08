@@ -1,0 +1,29 @@
+LoadModule ssl_module modules/mod_ssl.so
+
+<VirtualHost *:443>
+        ServerAdmin david@wakely.ca
+        DocumentRoot "/var/www/wakely/public"
+        ServerName wakely.ca
+        ServerAlias www.wakely.ca
+        SSLEngine on
+        SSLCertificateFile "/etc/letsencrypt/live/wakely.ca/cert.pem"
+        SSLCertificateKeyFile "/etc/letsencrypt/live/wakely.ca/privkey.pem"
+        SSLCertificateChainFile "/etc/letsencrypt/live/wakely.ca/fullchain.pem"
+
+   <Directory "/var/www/wakely/public">
+        Require all granted
+        AllowOverride All
+   </Directory>
+</VirtualHost>
+
+<VirtualHost *:80>
+        ServerAdmin david@wakely.ca
+        DocumentRoot "/var/www/wakely/public"
+        ServerName wakely.ca
+        ServerAlias www.wakely.ca
+
+    <Directory "/var/www/wakely/public">
+        Require all granted
+         AllowOverride All
+    </Directory>
+</VirtualHost>

@@ -20,11 +20,11 @@
 <main class="projects-main">
     <section>
         <h2>Personal Projects</h2>
-        <p>These are projects that I have been working on outside of class. Some of them use Squarespace CMS</p>
+        <p>These are projects that I have been working on outside of class. Before I was building in raw code for websites, I was figuring out how to manage and host and design websites built with pre-built software. It was CMS software like Squarespace / Wordpress or forum software like vBulletin and Xenforo. I made sure that the hosting provided was working and had all the necessary files, the site looked great and that the users of the sites had some smooth sailing ...</p>
     </section>
     
-    <a href="https://untitledoffroad.com"><section class="uo-project-card">
-        <header class="uo-header">
+    <a href="https://untitledoffroad.com" target="_blank"><section class="uo-project-card">
+        <header class="uo-header">›
             <h3>Untitled Offroad</h3>
         </header>
         <article class="uo-info">
