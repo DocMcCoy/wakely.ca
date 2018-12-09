@@ -20,12 +20,14 @@ class ContactController extends Controller
         ]);
         
         Mail::send('emails.contact-messge', [
-            'messge' => $request->message
+            'msg' => $request->contactTextarea
         ], function ($mail) use ($request) {
             $mail->from($request->contactEmail, $request->contactName);
-            $mail->to('david@wakely.ca');
+            $mail->to('david@wakely.ca')->subject("You've got a message from Wakely.ca");
         });
         
-        dd($request->all());
+        // dd($request->all());
+
+        return redirect()->back()-with('flash_message', "Thanks for contacting me!" );
     }
 }
