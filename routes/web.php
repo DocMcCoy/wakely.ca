@@ -27,9 +27,9 @@ Route::get('/projects', function () {
     return view('projects');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/contact', 'ContactController@index');
+
+Route::post('/contact', 'ContactController@makeContact');
 
 Route::get('/card', function () {
     return view('card');
