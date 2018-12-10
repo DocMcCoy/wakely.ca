@@ -18,16 +18,17 @@ class ContactController extends Controller
             'contactEmail' => 'required|email',
             'contactTextarea' => 'required'
         ]);
-        
-        Mail::send('emails.contact-messge', [
+    
+        Mail::send('emails.contact-message', [
             'msg' => $request->contactTextarea
         ], function ($mail) use ($request) {
             $mail->from($request->contactEmail, $request->contactName);
-            $mail->to('david@wakely.ca')->subject("You've got a message from Wakely.ca");
-        });
-        
-        // dd($request->all());
+            $mail->to('david@wakely.ca')->subject('Contact Wakely Message');
+        }
+        );    
 
-        return redirect()->back()-with('flash_message', "Thanks for contacting me!" );
+        // return view('contact#contact-form');
+
+        return redirect()->back();
     }
 }

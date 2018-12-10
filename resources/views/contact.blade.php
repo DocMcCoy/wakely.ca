@@ -29,32 +29,30 @@
         <p>PO Box 46034 Inglewood, Calgary, AB, T2G5H7, CANADA</p>
     </section>
     <iframe src="https://snazzymaps.com/embed/117752" width="100%" style="border:none;"></iframe>
-    @if (Session::has('flash_message'))
-        <div>{{ Session::get('flash_message') }}</div>
-    @endif
-    <form action="/contact" method="post" class="contact-form">
+  
+    <form action="/contact#contact-form" method="post" class="contact-form" id="contact-form">
         {{ csrf_field() }}
         <div class=form-label-and-error>
-            <label for="contact-name">Name: </label>
-            @if ($errors->has('contact-name'))
+            <label for="contacName">Name: </label>
+            @if ($errors->has('contactName'))
             <div class=form-error>C'mon ... I need a name</div>
             @endif
         </div>
-        <input type="text" name="contact-name" id="contact-name">
+        <input type="text" name="contactName" id="contactName">
         <div class=form-label-and-error>
-            <label for="contact-email">E-Mail: </label>
-            @if ($errors->has('contact-email'))
+            <label for="contactEmail">E-Mail: </label>
+            @if ($errors->has('contactEmail'))
             <div class=form-error>I'm not yelling my response back ... need an email</div>
             @endif
         </div>
-        <input type="email" name="contact-email" id="contact-email">
+        <input type="email" name="contactEmail" id="contactEmail">
         <div class=form-label-and-error>
-            <label for="contact-textarea">Whatcha Wanna Tell Me?: </label>
-            @if ($errors->has('contact-textarea'))
+            <label for="contactTextarea">Whatcha Wanna Tell Me?: </label>
+            @if ($errors->has('contactTextarea'))
             <div class=form-error>If ya got somethin' to say ...</div>
             @endif
         </div>
-        <textarea name="contact-textarea" id="contact-textarea" rows="5"></textarea>
+        <textarea name="contactTextarea" id="contactTextarea" rows="5"></textarea>
         <input type="submit" id="contact-submit">
     </form>
 </main>
