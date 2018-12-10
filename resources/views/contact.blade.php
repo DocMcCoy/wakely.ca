@@ -29,7 +29,12 @@
         <p>PO Box 46034 Inglewood, Calgary, AB, T2G5H7, CANADA</p>
     </section>
     <iframe src="https://snazzymaps.com/embed/117752" width="100%" style="border:none;"></iframe>
-  
+    
+    @if(session()->has('success'))
+    <div class="contact-form submit-success" id="contact-form">
+        <p><strong>Message Sent!</strong> - This Wakely dummy is really busy but he'll get back to you within 24hrs</p>
+    </div>
+    @else
     <form action="/contact#contact-form" method="post" class="contact-form" id="contact-form">
         {{ csrf_field() }}
         <div class=form-label-and-error>
@@ -55,5 +60,6 @@
         <textarea name="contactTextarea" id="contactTextarea" rows="5"></textarea>
         <input type="submit" id="contact-submit">
     </form>
+    @endif
 </main>
 @endsection

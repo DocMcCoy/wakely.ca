@@ -20,15 +20,17 @@ class ContactController extends Controller
         ]);
     
         Mail::send('emails.contact-message', [
-            'msg' => $request->contactTextarea
-        ], function ($mail) use ($request) {
-            $mail->from($request->contactEmail, $request->contactName);
-            $mail->to('david@wakely.ca')->subject('Contact Wakely Message');
+            'person' => $request->contactName,
+            'address' => $request->contactEmail,
+            'msg' => $request->contactTextarea,
+            ], function ($mail) use ($request) {
+            $mail->from('admin@wakely.ca', 'Wakely.ca Administrator');
+            $mail->to('david@wakely.ca')->subject('Message from the Wakely.ca Contact Form');
         }
         );    
 
         // return view('contact#contact-form');
 
-        return redirect()->back();
+        return redirect()->back()->with('success', true);
     }
 }

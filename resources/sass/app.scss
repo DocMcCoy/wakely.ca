@@ -378,10 +378,9 @@ footer {
 
   h2 {
     grid-area: t;
-    font-size: 4em;
+    font-size: 3.5em;
     justify-self: center;
     align-self: end;
-    margin-bottom: 20px;
   }
 
   .contact-info {
@@ -450,6 +449,25 @@ footer {
     align-self: center;
     min-height: 300px;
     margin-bottom: 20px;
+  }
+}
+
+.submit-success {
+  grid-area: b;
+  display: grid;
+
+  color: white;
+  background: rgba(0, 128, 0, 0.5);
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px black;
+  justify-content: stretch;
+  align-items: stretch;
+  grid-template-rows: 1fr max-content 1fr;
+
+  p{
+    grid-row: 2/3;
+    font-size: 16px;
+    text-align: justify;
   }
 }
 
@@ -556,11 +574,10 @@ footer {
   }
 
   h2 {
-    font-size: 5em;
+    font-size: 4em;
     grid-area: t;
     justify-self: center;
     align-self: end;
-    margin-bottom: 20px;
   }
   .contact-info {
     grid-area: a;
