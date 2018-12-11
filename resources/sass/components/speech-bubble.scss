@@ -18,7 +18,8 @@
         justify-self: start;
         margin: 0 0 1em 1em;
         grid-area: b;
-        height: 95%;
+        max-height: 95%;
+        max-width: 50%;
     }
 }
 
@@ -118,6 +119,7 @@
         margin: 0 1em 1em 0;
         grid-area: b;
         height: 95%;
+        max-width: 50%;
     }
 }
 

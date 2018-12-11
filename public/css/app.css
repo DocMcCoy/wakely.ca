@@ -10861,7 +10861,7 @@ footer {
 .about-main {
   max-width: 100vw;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100vw;
   grid-template-rows: repeat(minmax(500px auto));
   grid-template-areas: "b" "a" "c" "d";
 }
@@ -11177,7 +11177,8 @@ footer {
   justify-self: start;
   margin: 0 0 1em 1em;
   grid-area: b;
-  height: 95%;
+  max-height: 95%;
+  max-width: 50%;
 }
 
 .rectangle-speech-border {
@@ -11271,6 +11272,7 @@ footer {
   margin: 0 1em 1em 0;
   grid-area: b;
   height: 95%;
+  max-width: 50%;
 }
 
 .rectangle-speech-border-right {
