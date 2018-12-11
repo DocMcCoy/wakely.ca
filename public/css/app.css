@@ -10859,6 +10859,7 @@ footer {
 }
 
 .about-main {
+  max-width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(minmax(500px auto));
