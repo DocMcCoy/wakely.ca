@@ -1,0 +1,29 @@
+.fourohfour {
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    grid-template-rows: 1fr max-content 1fr;
+    grid-template-areas: 
+              ". b ."
+              ". a ."
+              ". . .";
+    
+    align-self: center;
+    h2 {
+      padding: 0;
+      margin: 0;
+      grid-area: a;
+      font-size: 30vh;
+      justify-self: center;
+      align-self: center;
+      background: url(/img/404.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    div {
+      grid-area: b;
+      margin-top: 20px;
+      justify-self: center;
+    }
+  }

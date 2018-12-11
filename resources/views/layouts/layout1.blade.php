@@ -43,7 +43,7 @@
 
         <!-- Header Image / Personal Logo -->
         @yield ('hero-image')
-            <img class="header-logo" src="{{ asset('img/logo.svg') }}" alt="Wakely Logo">
+            <a href="/"><img class="header-logo" src="{{ asset('img/logo.svg') }}" alt="Wakely Logo"></a>
         </header>
 
         <!-- Sticky Nav Menu -->
@@ -64,16 +64,16 @@
     <div class="wrapper">
         <footer>
             <ul>                
-                <img src="{{ asset('img/logo.svg') }}" alt="Wakely Logo" height="50px">
-                <li>David Wakely</li>
+                <a href="/"><img src="{{ asset('img/logo.svg') }}" alt="Wakely Logo" height="50px"></a>
+                <li><a href="/contact">David Wakely</a></li>
                 <li><a href="mailto:david@wakely.ca">david@wakely.ca</a></li>
                 <li><a href="tel:1-403-708-6600">(403) 708-6600</a></li>
             </ul>
             <ul>
-                <h5>School Assignments</h5>
+                <a href="/assign"><h5>Assignments</h5></a>
             </ul>
             <ul>
-                <h5>Personal Side Projects</h5>
+                <a href="/projects"><h5>Side Hustles</h5></a>
             </ul>
             <div>
                 <h5>Follow Me</h5>
@@ -86,7 +86,7 @@
                 <a href="https://bitbucket.org/DocMcCoy/"><i class="fab fa-bitbucket"></i></a>
                 </div>
             </div>
-            <span>Copyright © <?php echo date("Y"); ?> David Wakely</span>            
+            <span>Copyright © <?php echo date("Y"); ?> David Wakely - <a href="#">Privacy Policy</a></span>            
         </footer>  
     </div>
 </body>

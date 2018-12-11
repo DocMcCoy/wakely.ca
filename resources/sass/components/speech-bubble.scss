@@ -1,0 +1,154 @@
+/* ============================================================================================================================
+== RECTANGLE-BORDER STYLES WITH CURVE
+** ============================================================================================================================ */
+
+// Speech Bubble with Pointer to the Left
+
+// Main part of speech bubble * Left
+.rectangle-speech-border {
+    position:relative;
+    padding:50px 15px;
+    margin:1em 1em 0 10em;
+    border:10px solid #1e1e1e;
+    text-align:center;
+    color:#333;
+    background:#fff;
+    /* css3 */
+    border-radius:20px;
+  }
+  /* creates larger curve * Left */
+  .rectangle-speech-border:before {
+    content:"";
+    position:absolute;
+    z-index:10;
+    bottom:-40px;
+    left:50px;
+    width:50px;
+    height:30px;
+    border-style:solid;
+    border-width:0 10px 10px 0;
+    border-color:#1e1e1e;
+    background:white;
+    /* css3 */
+    border-bottom-right-radius:80px 50px;
+    /* reduce the damage in FF3.0 */
+    display:block;
+  }
+  
+  /* creates smaller curve * Left*/
+  .rectangle-speech-border:after {
+    content:"";
+    position:absolute;
+    z-index:10;
+    bottom:-40px;
+    left:50px;
+    width:20px;
+    height:30px;
+    border-style:solid;
+    border-width:0 10px 10px 0;
+    border-color:#1e1e1e;
+    background:#333333;
+    /* css3 */
+    border-bottom-right-radius:40px 50px;
+    /* reduce the damage in FF3.0 */
+    display:block;
+  }
+  
+  /* creates a small circle to produce a rounded point where the two curves meet * Left*/
+  .rectangle-speech-border > :first-child:before {
+    content:"";
+    position:absolute;
+    bottom:-40px;
+    left:45px;
+    width:10px;
+    height:10px;
+    background:#1e1e1e;
+    /* css3 */
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+  }
+  
+  /* creates a white rectangle to cover part of the oval border * Left */
+  .rectangle-speech-border > :first-child:after {
+    content:"";
+    position:absolute;
+    bottom:-10px;
+    left:70px;
+    width:20px;
+    height:15px;
+    background:#fff;
+  }
+  
+  // Main part of speech bubble * Right
+  .rectangle-speech-border-right {
+    position:relative;
+    padding:50px 15px;
+    margin:1em 10em 0 1em;
+    border:10px solid #1e1e1e;
+    text-align:center;
+    color:#333;
+    background:#fff;
+    /* css3 */
+    border-radius:20px;
+  }
+  /* creates larger curve * Right */
+  .rectangle-speech-border-right:before {
+    content:"";
+    position:absolute;
+    z-index:10;
+    bottom:-40px;
+    right:50px;
+    width:50px;
+    height:30px;
+    border-style:solid;
+    border-width:0 0 10px 10px;
+    border-color:#1e1e1e;
+    background:white;
+    /* css3 */
+    border-bottom-left-radius:80px 50px;
+    /* reduce the damage in FF3.0 */
+    display:block;
+  }
+  /* creates smaller curve * Right */
+  .rectangle-speech-border-right:after {
+    content:"";
+    position:absolute;
+    z-index:10;
+    bottom:-40px;
+    right:50px;
+    width:20px;
+    height:30px;
+    border-style:solid;
+    border-width:0 0 10px 10px;
+    border-color:#1e1e1e;
+    background:#333333;
+    /* css3 */
+    border-bottom-left-radius:40px 50px;
+    /* reduce the damage in FF3.0 */
+    display:block;
+  }
+  /* creates a small circle to produce a rounded point where the two curves meet * Right */
+  .rectangle-speech-border-right > :first-child:before {
+    content:"";
+    position:absolute;
+    bottom:-40px;
+    right:45px;
+    width:10px;
+    height:10px;
+    background:#1e1e1e;
+    /* css3 */
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+  }
+  /* creates a white rectangle to cover part of the oval border * Right*/
+  .rectangle-speech-border-right > :first-child:after {
+    content:"";
+    position:absolute;
+    bottom:-10px;
+    right:70px;
+    width:20px;
+    height:15px;
+    background:#fff;
+  }

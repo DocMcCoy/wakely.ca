@@ -1,0 +1,60 @@
+// Refactored Base Level Styling
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+ul, li, h1, h2, h3, h4, h5, p, label {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $links;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $links;
+  text-decoration: none;
+}
+
+body {
+  color: #fff;
+  background: #333333;
+  font-family: 'Source Code Pro', Consolas, monospace;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 383px) minmax(auto, 383px) 1fr;
+}
+
+.headings {
+  grid-column: 1/3;
+  grid-row: 1;
+  justify-self: center;
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin: 5px 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 766px) {
+  .wrapper {
+    grid-template-columns: 1fr minmax(383px, 540px) minmax(383px, 540px) 1fr;
+  }
+}

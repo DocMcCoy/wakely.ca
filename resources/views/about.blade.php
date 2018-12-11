@@ -12,7 +12,7 @@
 <li class="brackets"><a href="/">Home</a></li>
 <li><a class="active" href="/about">About</a></li>
 <li class="brackets"><a href="/assignments">Assignments</a></li>
-<li class="brackets"><a href="/projects">Personal Projects</a></li>
+<li class="brackets"><a href="/projects">Side Hustles</a></li>
 <li class="brackets"><a href="/contact">Contact</a></li>
 @endsection
 
@@ -22,9 +22,9 @@
         <p>Hi! I'm David Wakely. I'm building up this website currently. Excuse the mess as I get this thing up and running.</p>
     </blockquote>
     <img src="/img/profile-img.png" alt="" height="500px">
-    <blockquote class="rectangle-speech-border">
+    <blockquote class="rectangle-speech-border-right">
         <p>Thanks for checking out the site! Be sure to follow me and Wakely Dev on social media. Check the links in the footer!</p>
     </blockquote>
-    <img src="/img/profile-img.png" alt="" height="500px">
+    <img src="/img/profile-img.png" alt="" height="500px" class="right">
 </main>
 @endsection

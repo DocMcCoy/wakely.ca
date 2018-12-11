@@ -12,7 +12,7 @@
 <li class="brackets"><a href="/">Home</a></li>
 <li class="brackets"><a href="/about">About</a></li>
 <li class="brackets"><a href="/assignments">Assignments</a></li>
-<li class="brackets"><a href="/projects">Personal Projects</a></li>
+<li class="brackets"><a href="/projects">Side Hustles</a></li>
 <li><a class="active" href="/contact">Contact</a></li>
 @endsection
 
@@ -31,7 +31,7 @@
     <iframe src="https://snazzymaps.com/embed/117752" width="100%" style="border:none;"></iframe>
     
     @if(session()->has('success'))
-    <div class="contact-form submit-success" id="contact-form">
+    <div class="submit-success" id="contact-form">
         <p><strong>Message Sent!</strong> - This Wakely dummy is really busy but he'll get back to you within 24hrs</p>
     </div>
     @else

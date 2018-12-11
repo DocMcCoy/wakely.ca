@@ -1,0 +1,31 @@
+.about-main {
+    min-height: 100vh;
+
+    grid-column: 2/4;
+    align-self: center;
+    justify-self: center;
+
+    h1, h2, h3 {
+        font-family: 'Source Code Pro', Consolas, monospace;
+        text-shadow: 1px 1px 10px #1e1e1e;
+    }
+    
+    article{
+        //background: #1e1e1e;
+        margin: 0 auto;
+    }
+    p {
+        padding: 5px 20px;
+    }
+}
+
+.about-main {  
+    grid-column: 2/3;
+    justify-self: stretch;
+    align-self: stretch;
+
+    img {
+        height: 40vw;
+        max-height: 300px;
+    }
+}

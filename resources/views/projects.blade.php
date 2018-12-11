@@ -12,7 +12,7 @@
 <li class="brackets"><a href="/">Home</a></li>
 <li class="brackets"><a href="/about">About</a></li>
 <li class="brackets"><a href="/assignments">Assignments</a></li>
-<li><a class="active" href="/projects">Personal Projects</a></li>
+<li><a class="active" href="/projects">Side Hustles</a></li>
 <li class="brackets"><a href="/contact">Contact</a></li>
 @endsection
 

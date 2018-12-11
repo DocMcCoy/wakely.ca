@@ -12,7 +12,7 @@
 <li><a class="active" href="/">Home</a></li>
 <li class="brackets"><a href="/about">About</a></li>
 <li class="brackets"><a href="/assignments">Assignments</a></li>
-<li class="brackets"><a href="/projects">Personal Projects</a></li>
+<li class="brackets"><a href="/projects">Side Hustles</a></li>
 <li class="brackets"><a href="/contact">Contact</a></li>
 @endsection
 
@@ -22,11 +22,10 @@
     <section>
         <div class="headings">
             <h1>Welcome to Wakely.ca</h1>
-            <h2>Hello World!</h2>
-            <h2>(aka - beta testing in public)</h2>
+            <h2>Currently beta testing in public!</h2>
         </div>
         <div class="content">
-            <p>Welcome to my website! I'm getting this portfolio website off the ground by including my class exercises and assignments that I've completed for my Web Dev course that I'm taking at SAIT. I've also included some of the side projects that I've been working on before, during and after this course is over.</p>
+            <p>I'm slowly getting this portfolio website off the ground by including my class exercises and assignments that I've completed for my Web Dev course that I'm taking at SAIT. I've also included some of the side projects that I've been working on before, during and after this course is over.</p>
             <p>Below you can find my featured project, the project I'm most proud of or the project I'm currently working on.</p>
         </div>
         <div class="headings">
