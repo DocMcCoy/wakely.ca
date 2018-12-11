@@ -10796,7 +10796,20 @@ footer {
 == RECTANGLE-BORDER STYLES WITH CURVE
 ** ============================================================================================================================ */
 
+.speech-card-left {
+  display: grid;
+  grid-template-areas: "."  "a" "b" ".";
+  grid-template-rows: 1fr auto auto 1fr;
+}
+
+.speech-card-left img {
+  justify-self: start;
+  margin: 0 0 1em 1em;
+  grid-area: b;
+}
+
 .rectangle-speech-border {
+  grid-area: a;
   position: relative;
   padding: 50px 15px;
   margin: 1em 1em 0 10em;
@@ -10874,7 +10887,20 @@ footer {
   background: #fff;
 }
 
+.speech-card-right {
+  display: grid;
+  grid-template-areas: "."  "a" "b" ".";
+  grid-template-rows: 1fr auto auto 1fr;
+}
+
+.speech-card-right img {
+  justify-self: end;
+  margin: 0 1em 1em 0;
+  grid-area: b;
+}
+
 .rectangle-speech-border-right {
+  grid-area: a;
   position: relative;
   padding: 50px 15px;
   margin: 1em 10em 0 1em;
