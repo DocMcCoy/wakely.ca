@@ -1,31 +1,52 @@
 .about-main {
-    min-height: 100vh;
 
-    grid-column: 2/4;
-    align-self: center;
-    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(minmax(500px auto));
+    grid-template-areas:
+    "b"
+    "a"
+    "c"
+    "d";
 
     h1, h2, h3 {
         font-family: 'Source Code Pro', Consolas, monospace;
         text-shadow: 1px 1px 10px #1e1e1e;
     }
-    
-    article{
-        //background: #1e1e1e;
-        margin: 0 auto;
+
+    #about-img-one {
+        min-height: 500px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 75%;
+        grid-area: b;
     }
-    p {
-        padding: 5px 20px;
+
+    #about-img-two {
+        min-height: 500px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        grid-area: c;
+    }
+
+    #about-img-three {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        grid-area: f;
     }
 }
 
-.about-main {  
-    grid-column: 2/3;
-    justify-self: stretch;
-    align-self: stretch;
-
-    img {
-        height: 40vw;
-        max-height: 300px;
+@media only screen and (min-width: 766px) {
+    .about-main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(1000px);
+        grid-template-areas:
+        "a b"
+        "c d";
     }
 }

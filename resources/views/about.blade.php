@@ -18,17 +18,19 @@
 
 @section ('content')
 <main class="about-main">
-    <div class="speech-card-left">
+    <img id="about-img-one" src="/img/about/about-david-wakely-motorcycle.jpg" alt="David Wakely standing beside his Triumph Scrambler Motorcycle">
+    <div id="speech-bubble" class="speech-card-left">
         <blockquote class="rectangle-speech-border">
             <p>Hi! I'm David Wakely. I'm building up this website currently. Excuse the mess as I get this thing up and running.</p>
         </blockquote>
-        <img src="/img/profile-img.png" alt="" height="500px">
+        <img class="profile-circle" src="/img/profile-img.png" alt="" height="500px">
     </div>
+    <img id="about-img-two" src="/img/about/about-david-wakely-arctic-ocean.jpg" alt="David Wakely and Untitled Offroad at the Arctic Ocean in Tuktoyaktuk">
     <div class="speech-card-right">
         <blockquote class="rectangle-speech-border-right">
             <p>Thanks for checking out the site! Be sure to follow me and Wakely Dev on social media. Check the links in the footer!</p>
         </blockquote>
-        <img src="/img/profile-img.png" alt="" height="500px" class="right">
+        <img class="profile-circle" src="/img/profile-img.png" alt="" height="500px" class="right">
     </div>
 </main>
 @endsection

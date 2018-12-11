@@ -1,9 +1,12 @@
 footer {
+    padding-top: 1em;
     background: #000;
     grid-column: 1/5;
 
     display: grid;
     justify-content: center;
+
+    padding-bottom: 1em;
 }
 
 .socialcontainer {

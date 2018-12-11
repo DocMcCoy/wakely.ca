@@ -70,7 +70,7 @@
                 <li><a href="tel:1-403-708-6600">(403) 708-6600</a></li>
             </ul>
             <ul>
-                <a href="/assign"><h5>Assignments</h5></a>
+                <a href="/assignments"><h5>Assignments</h5></a>
             </ul>
             <ul>
                 <a href="/projects"><h5>Side Hustles</h5></a>

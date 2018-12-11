@@ -10,12 +10,15 @@
     "a"
     "b"
     ".";
-    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 
-    img {
+    min-height: 500px;
+
+    .profile-circle {
         justify-self: start;
         margin: 0 0 1em 1em;
         grid-area: b;
+        height: 95%;
     }
 }
 
@@ -106,12 +109,15 @@
     "a"
     "b"
     ".";
-    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 
-    img {
+    min-height: 500px;
+
+    .profile-circle {
         justify-self: end;
         margin: 0 1em 1em 0;
         grid-area: b;
+        height: 95%;
     }
 }
 
