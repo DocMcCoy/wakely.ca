@@ -28,12 +28,16 @@
             <p>I'm slowly getting this portfolio website off the ground by including my class exercises and assignments that I've completed for my Web Dev course that I'm taking at SAIT. I've also included some of the side projects that I've been working on before, during and after this course is over.</p>
             <p>Below you can find my featured project, the project I'm most proud of or the project I'm currently working on.</p>
         </div>
+    </section>
+    <section>
         <div class="headings">
             <h3>Featured Project</h3>
         </div>
         <article class="content">
             <p>To be honest ... I'm currently hammering this website together. This website is going to be part of my presentation for my SAIT Web Development course on Dec. 14th. If you see anything I should work on or any errors, I'd appreciate any heads up and any constructive criticism you have. Also be sure to cross your fingers and wish me well with this thing.</p>
-        </article>   
+        </article>
+    </section>
+    <section>
         <div class="summary-image">
             <img src="/img/calgary-full-moon.jpg" alt="Full Moon Over Downtown Calgary circa 2018">
             <span>Downtown Calgary circa February 2018 - Photo by Me - © <?php echo Date('Y') ?></span>

@@ -10743,14 +10743,17 @@ nav .active {
 }
 
 footer {
-  padding-top: 1em;
+  padding: 1em;
   background: #000;
   grid-column: 1/5;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 1em;
+}
+
+footer ul {
+  margin-bottom: .5em;
 }
 
 .socialcontainer {
@@ -10764,6 +10767,7 @@ footer {
 }
 
 .socialcontainer i {
+  margin-top: .5em;
   font-size: 1.5em;
 }
 
@@ -10796,40 +10800,48 @@ footer {
 
 .home-main {
   min-height: 100vh;
-  grid-column: 2/4;
-  -ms-flex-item-align: center;
-      align-self: center;
-  justify-self: center;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px repeat(4, auto) 50px;
 }
 
-.home-main h1,
-.home-main h2,
-.home-main h3 {
-  font-family: 'Source Code Pro', Consolas, monospace;
-  text-shadow: 1px 1px 10px #1f1f1f;
+.home-main section:nth-child(1) {
+  margin: 1em;
+  grid-row: 2/3;
 }
 
-.home-main article {
-  margin: 0 auto;
+.home-main section:nth-child(2) {
+  margin: 1em;
+  grid-row: 3/4;
 }
 
-.home-main p {
-  padding: 5px 20px;
+.home-main section:nth-child(3) {
+  margin: 1em 0;
+  grid-row: 4/5;
 }
 
-.content {
-  grid-column: 1/3;
-  grid-row: 2;
-  -ms-flex-item-align: start;
-      align-self: start;
+.home-main section:nth-child(4) {
+  margin: 1em;
+  grid-row: 5/6;
 }
 
-.content p:last-child {
-  margin-bottom: 20px;
+.home-main .headings h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.home-main .headings h2 {
+  margin-bottom: 1em;
+}
+
+.home-main .headings h3 {
+  margin-bottom: 1em;
 }
 
 .summary-image {
   min-height: 100vh;
+  height: 100%;
   display: grid;
   background: url(/img/calgary-full-moon.jpg);
   background-size: cover;
@@ -10856,6 +10868,37 @@ footer {
       align-self: end;
   margin: 20px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (min-width: 766px) {
+  .home-main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px repeat(3, auto) 50px;
+  }
+
+  .home-main section:nth-child(1) {
+    margin: 1em;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .home-main section:nth-child(2) {
+    margin: 1em;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .home-main section:nth-child(3) {
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
+
+  .home-main section:nth-child(4) {
+    margin: 1em;
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
 }
 
 .about-main {
@@ -10938,6 +10981,10 @@ footer {
 
 .project-main {
   min-height: 100vh;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px auto auto auto 50px;
 }
 
 .project-main h1,
@@ -10945,6 +10992,249 @@ footer {
 .project-main h3 {
   font-family: 'Source Code Pro', Consolas, monospace;
   text-shadow: 1px 1px 10px #1e1e1e;
+}
+
+.project-main section {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+.project-main section h2,
+.project-main section h4 {
+  text-align: center;
+}
+
+.project-main section p {
+  margin: 1em;
+  text-align: justify;
+}
+
+.project-main .uo-project-card {
+  grid-row: 3/4;
+}
+
+.project-main .uo-project-card a {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column: 1/-1;
+}
+
+.project-main .uo-project-card a .uo-header {
+  min-height: 300px;
+  display: grid;
+  grid-column: 1/-1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-main .uo-project-card a .uo-header img {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
+}
+
+.project-main .uo-project-card a .uo-header h3 {
+  font-size: 2.1em;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+}
+
+.project-main .uo-project-card a .uo-info {
+  display: grid;
+  grid-template-rows: 1fr -webkit-min-content -webkit-max-content 1fr;
+  grid-template-rows: 1fr min-content max-content 1fr;
+  grid-column: 1/-1;
+  padding: 1em;
+  height: 100%;
+}
+
+.project-main .uo-project-card a .uo-info h4 {
+  grid-row: 2/3;
+}
+
+.project-main .uo-project-card a .uo-info p {
+  grid-row: 3/4;
+}
+
+.project-main .pa-project-card {
+  grid-row: 4/5;
+}
+
+.project-main .pa-project-card a {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column: 1/-1;
+}
+
+.project-main .pa-project-card a .pa-header {
+  min-height: 300px;
+  display: grid;
+  grid-column: 1/-1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-main .pa-project-card a .pa-header img {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right top;
+     object-position: right top;
+}
+
+.project-main .pa-project-card a .pa-header h3 {
+  font-size: 2.2em;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+}
+
+.project-main .pa-project-card a .pa-info {
+  display: grid;
+  grid-template-rows: 1fr -webkit-min-content -webkit-max-content 1fr;
+  grid-template-rows: 1fr min-content max-content 1fr;
+  grid-column: 1/-1;
+  padding: 1em;
+}
+
+.project-main .pa-project-card a .pa-info h4 {
+  grid-row: 2/3;
+}
+
+.project-main .pa-project-card a .pa-info p {
+  grid-row: 3/4;
+}
+
+@media only screen and (min-width: 766px) {
+  .project-main {
+    min-height: 100vh;
+  }
+
+  .project-main .uo-project-card a {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column: 1/-1;
+  }
+
+  .project-main .uo-project-card a .uo-header {
+    display: grid;
+    grid-column: 1/2;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .project-main .uo-project-card a .uo-header img {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0% 0%;
+       object-position: 0% 0%;
+  }
+
+  .project-main .uo-project-card a .uo-header h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  }
+
+  .project-main .uo-project-card a .uo-info {
+    grid-column: 2/-1;
+    padding: 1em;
+  }
+
+  .project-main .pa-project-card a {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column: 1/-1;
+  }
+
+  .project-main .pa-project-card a .pa-header {
+    display: grid;
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .project-main .pa-project-card a .pa-header img {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0% 0%;
+       object-position: 0% 0%;
+  }
+
+  .project-main .pa-project-card a .pa-header h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  }
+
+  .project-main .pa-project-card a .pa-info {
+    grid-column: 1/2;
+    padding: 1em;
+  }
 }
 
 .contact-main {
