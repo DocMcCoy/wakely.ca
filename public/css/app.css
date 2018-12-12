@@ -11024,21 +11024,19 @@ footer ul {
   grid-template-rows: 50px auto auto auto 50px;
 }
 
-.project-main h1,
-.project-main h2,
-.project-main h3 {
-  font-family: 'Source Code Pro', Consolas, monospace;
-  text-shadow: 1px 1px 10px #1e1e1e;
-}
-
 .project-main section {
   grid-column: 1/-1;
   grid-row: 2/3;
+  margin: 20px 0;
 }
 
 .project-main section h2,
 .project-main section h4 {
   text-align: center;
+}
+
+.project-main section h2 {
+  font-size: 2em;
 }
 
 .project-main section p {
@@ -11187,6 +11185,10 @@ footer ul {
 @media only screen and (min-width: 766px) {
   .project-main {
     min-height: 100vh;
+  }
+
+  .project-main section h2 {
+    font-size: 3em;
   }
 
   .project-main .uo-project-card a {
@@ -11469,16 +11471,17 @@ footer ul {
   display: grid;
   grid-template-columns: 1fr -webkit-min-content 1fr;
   grid-template-columns: 1fr min-content 1fr;
-  grid-template-rows: 1fr -webkit-max-content 1fr;
-  grid-template-rows: 1fr max-content 1fr;
-  grid-template-areas: ". b ." ". a ." ". . .";
+  grid-template-rows: 1fr 1fr -webkit-max-content 1fr 1fr;
+  grid-template-rows: 1fr 1fr max-content 1fr 1fr;
+  grid-template-areas: ". . ." ". a ." ". b ." ". T ." ". . .";
   align-self: center;
 }
 
 .fourohfour h2 {
+  font-family: DDCHardware;
   padding: 0;
   margin: 0;
-  grid-area: a;
+  grid-area: b;
   font-size: 30vh;
   justify-self: center;
   -ms-flex-item-align: center;
@@ -11490,9 +11493,26 @@ footer ul {
 }
 
 .fourohfour div {
-  grid-area: b;
-  margin-top: 20px;
-  justify-self: center;
+  display: grid;
+}
+
+.fourohfour div p {
+  font-weight: 900;
+  text-align: center;
+}
+
+.fourohfour .fourohfour-top-text {
+  grid-area: a;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.fourohfour .fourohfour-bottom-text {
+  grid-area: T;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 /* ============================================================================================================================

@@ -2,28 +2,44 @@
     min-height: 70vh;
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
-    grid-template-rows: 1fr max-content 1fr;
-    grid-template-areas: 
-              ". b ."
-              ". a ."
-              ". . .";
+    grid-template-rows: 1fr 1fr max-content 1fr 1fr;
+    grid-template-areas:    ". . ."
+                            ". a ."
+                            ". b ."
+                            ". T ."
+                            ". . .";
+              
+              
     
     align-self: center;
+
     h2 {
-      padding: 0;
-      margin: 0;
-      grid-area: a;
-      font-size: 30vh;
-      justify-self: center;
-      align-self: center;
-      background: url(/img/404.png);
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
+        font-family: DDCHardware;
+        padding: 0;
+        margin: 0;
+        grid-area: b;
+        font-size: 30vh;
+        justify-self: center;
+        align-self: center;
+        background: url(/img/404.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     div {
-      grid-area: b;
-      margin-top: 20px;
-      justify-self: center;
+        display: grid;
+        p {
+            font-weight: 900;
+            text-align: center;
+        }
+    }
+
+    .fourohfour-top-text {
+        grid-area: a;
+        align-items: end;
+    }
+    .fourohfour-bottom-text {
+        grid-area: T;
+        align-items: end;
     }
   }

@@ -35,7 +35,7 @@ Route::get('/card', function () {
     return view('card');
 });
 
-
+Route::get('/goback', 'GoBackController@goBack');
 
 Auth::routes();
 

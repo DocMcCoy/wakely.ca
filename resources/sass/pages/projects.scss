@@ -4,18 +4,20 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px auto auto auto 50px;
-
-    h1, h2, h3 {
-    font-family: 'Source Code Pro', Consolas, monospace;
-    text-shadow: 1px 1px 10px #1e1e1e;
-    }
     
     section {
         grid-column: 1/-1;
         grid-row: 2/3;
+        margin: 20px 0;
+        
         h2, h4 {
             text-align: center;
         }
+
+        h2 {
+            font-size: 2em;
+        }
+
         p {
             margin: 1em;
             text-align: justify;
@@ -146,6 +148,12 @@
 @media only screen and (min-width: 766px) {
     .project-main {
         min-height: 100vh;
+
+        section {
+            h2 {
+                font-size: 3em;
+            }
+        }
         
         .uo-project-card {
             a {
