@@ -10594,7 +10594,7 @@ body {
 }
 
 .project-image {
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.23) 40%, rgba(0, 0, 0, 0) 75%), url(/img/background.jpg);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.23) 40%, rgba(0, 0, 0, 0) 75%), url(/img/heros/wakely-projects-hero.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -10958,25 +10958,62 @@ footer ul {
 
 .assign-main {
   min-height: 100vh;
-  grid-column: 2/4;
-  -ms-flex-item-align: center;
-      align-self: center;
-  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px repeat(4, auto) 50px;
+  grid-row-gap: 50px;
 }
 
-.assign-main h1,
-.assign-main h2,
-.assign-main h3 {
-  font-family: 'Source Code Pro', Consolas, monospace;
-  text-shadow: 1px 1px 10px #1e1e1e;
+.assign-main .headings h2 {
+  font-size: 2em;
+  text-decoration: none !important;
 }
 
-.assign-main article {
-  margin: 0 auto;
+.assign-main .headings h5 {
+  text-align: center;
 }
 
-.assign-main p {
-  padding: 5px 20px;
+.assign-main section {
+  margin: 1em;
+}
+
+.assign-main section h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.assign-main section h3 {
+  margin-left: 50px;
+}
+
+.assign-main section p {
+  padding: 1em;
+}
+
+.assign-main section article {
+  margin: 1em;
+}
+
+.assign-main section:nth-child(1) {
+  grid-row: 2/3;
+}
+
+.assign-main section:nth-child(2) {
+  grid-row: 3/4;
+}
+
+.assign-main section:nth-child(3) {
+  grid-row: 4/5;
+}
+
+.assign-main section:nth-child(4) {
+  grid-row: 5/6;
+}
+
+@media only screen and (min-width: 766px) {
+  .assign-main .headings h2 {
+    font-size: 3em;
+  }
 }
 
 .project-main {
@@ -11011,6 +11048,9 @@ footer ul {
 
 .project-main .uo-project-card {
   grid-row: 3/4;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .project-main .uo-project-card a {
@@ -11055,7 +11095,7 @@ footer ul {
       align-self: center;
   grid-column: 1/-1;
   grid-row: 1/-1;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  text-shadow: 1px 0 black,  -1px 0 black,  0 -1px black,  0 1px  black,  1px 0 10px black,  -1px 0 10px black,  0 1px 10px black,  0 -1px 10px black;
 }
 
 .project-main .uo-project-card a .uo-info {
@@ -11069,6 +11109,7 @@ footer ul {
 
 .project-main .uo-project-card a .uo-info h4 {
   grid-row: 2/3;
+  text-decoration: underline;
 }
 
 .project-main .uo-project-card a .uo-info p {
@@ -11077,6 +11118,8 @@ footer ul {
 
 .project-main .pa-project-card {
   grid-row: 4/5;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .project-main .pa-project-card a {
@@ -11106,8 +11149,8 @@ footer ul {
   grid-row: 1/-1;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: right top;
-     object-position: right top;
+  -o-object-position: center top;
+     object-position: center top;
 }
 
 .project-main .pa-project-card a .pa-header h3 {
@@ -11121,7 +11164,7 @@ footer ul {
       align-self: center;
   grid-column: 1/-1;
   grid-row: 1/-1;
-  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+  text-shadow: 1px 0 #3d6377,  -1px 0 #3d6377,  0 -1px #3d6377,  0 1px  #3d6377,  1px 0 10px #3d6377,  -1px 0 10px #3d6377,  0 1px 10px #3d6377,  0 -1px 10px #3d6377;
 }
 
 .project-main .pa-project-card a .pa-info {
@@ -11134,6 +11177,7 @@ footer ul {
 
 .project-main .pa-project-card a .pa-info h4 {
   grid-row: 2/3;
+  text-decoration: underline;
 }
 
 .project-main .pa-project-card a .pa-info p {
@@ -11215,8 +11259,8 @@ footer ul {
     grid-row: 1/-1;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: 0% 0%;
-       object-position: 0% 0%;
+    -o-object-position: center top;
+       object-position: center top;
   }
 
   .project-main .pa-project-card a .pa-header h3 {
@@ -11228,7 +11272,6 @@ footer ul {
         align-self: center;
     grid-column: 1/-1;
     grid-row: 1/-1;
-    text-shadow: 1px 1px 10px black, -1px -1px 10px black;
   }
 
   .project-main .pa-project-card a .pa-info {

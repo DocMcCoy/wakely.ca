@@ -43,7 +43,6 @@
             <span>Downtown Calgary circa February 2018 - Photo by Me - © <?php echo Date('Y') ?></span>
         </div>
     </section>
-
     <section>
         <div class="headings">
             <h2>About Me</h2>
@@ -55,7 +54,5 @@
             <a href="/about"><p>Click here to see more...</p></a>
         </article>
     </section>
-
-
 </main>
 @endsection

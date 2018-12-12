@@ -5,7 +5,7 @@
 @endsection
 
 @section ('hero-image')
-<header class="home-image">
+<header class="project-image">
 @endsection
 
 @section ('top-nav')

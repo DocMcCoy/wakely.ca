@@ -1,19 +1,61 @@
 .assign-main {
     min-height: 100vh;
 
-    grid-column: 2/4;
-    align-self: center;
-    justify-self: center;
-    h1, h2, h3 {
-    font-family: 'Source Code Pro', Consolas, monospace;
-    text-shadow: 1px 1px 10px #1e1e1e;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px repeat(4, auto) 50px;
+    grid-row-gap: 50px;
+
+    .headings{
+        h2{
+            font-size: 2em;
+            text-decoration: none !important;
+        }
+        h5 {
+            text-align: center;
+        }
     }
-    
-    article{
-    //background: #1e1e1e;
-    margin: 0 auto;
+
+    section {
+        margin: 1em;
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        h3 {
+            margin-left: 50px;
+        }
+        p {
+            padding: 1em;
+        }
+
+        article {
+            margin: 1em;
+        }
     }
-    p {
-    padding: 5px 20px;
+
+    section:nth-child(1) {
+        grid-row: 2/3;
     }
+    section:nth-child(2) {
+        grid-row: 3/4;
+    }
+    section:nth-child(3) {
+        grid-row: 4/5;
+    }
+    section:nth-child(4) {
+        grid-row: 5/6;
+    }
+}
+
+@media only screen and (min-width: 766px) {
+    .assign-main {
+        .headings {
+            h2 {
+                font-size: 3em;
+            }
+        }
+    }
+
 }

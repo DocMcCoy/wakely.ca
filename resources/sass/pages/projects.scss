@@ -24,6 +24,8 @@
 
     .uo-project-card {
         grid-row: 3/4;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
         a {
             height: 100%;
             display: grid;
@@ -52,7 +54,15 @@
                     align-self: center;
                     grid-column: 1/-1;
                     grid-row: 1/-1;
-                    text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+                    text-shadow:
+                        1px 0 black, 
+                        -1px 0 black, 
+                        0 -1px black, 
+                        0 1px  black, 
+                        1px 0 10px black, 
+                        -1px 0 10px black, 
+                        0 1px 10px black, 
+                        0 -1px 10px black;
                 }
             }
             .uo-info {
@@ -64,6 +74,7 @@
 
                 h4 {
                     grid-row: 2/3;
+                    text-decoration: underline;
                 }
                 p{
                     grid-row: 3/4;
@@ -74,6 +85,7 @@
 
     .pa-project-card {
         grid-row: 4/5;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
         a {
             height: 100%;
             display: grid;
@@ -92,7 +104,7 @@
                     grid-column: 1/-1;
                     grid-row: 1/-1;
                     object-fit: cover;
-                    object-position: right top;
+                    object-position: center top;
                 }
                 h3 {
                     font-size:2.2em;
@@ -102,7 +114,15 @@
                     align-self: center;
                     grid-column: 1/-1;
                     grid-row: 1/-1;
-                    text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+                    text-shadow: 
+                        1px 0 #3d6377, 
+                        -1px 0 #3d6377, 
+                        0 -1px #3d6377, 
+                        0 1px  #3d6377, 
+                        1px 0 10px #3d6377, 
+                        -1px 0 10px #3d6377, 
+                        0 1px 10px #3d6377, 
+                        0 -1px 10px #3d6377;
                 }
             }
             .pa-info {
@@ -113,6 +133,7 @@
 
                 h4 {
                     grid-row: 2/3;
+                    text-decoration: underline;
                 }
                 p{
                     grid-row: 3/4;
@@ -179,7 +200,7 @@
                         grid-column: 1/-1;
                         grid-row: 1/-1;
                         object-fit: cover;
-                        object-position: 0% 0%;
+                        object-position: center top;
                     }
                     h3 {
                         display: flex;
@@ -187,7 +208,6 @@
                         align-self: center;
                         grid-column: 1/-1;
                         grid-row: 1/-1;
-                        text-shadow: 1px 1px 10px black, -1px -1px 10px black;
                     }
                 }
                 .pa-info {
