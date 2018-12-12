@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', array('https', function () {
     return view('splash');
-});
+}));
 
 Route::get('/about', function () {
     return view('about');
