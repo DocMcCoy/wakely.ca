@@ -42,6 +42,11 @@
             <img src="/img/calgary-full-moon.jpg" alt="Full Moon Over Downtown Calgary circa 2018">
             <span>Downtown Calgary circa February 2018 - Photo by Me - © <?php echo Date('Y') ?></span>
         </div>
+        <div class="summary-image">
+            <img src="/img/peace-bridge-calgary-wakely-home-page.jpg" alt="Peace Bridge leading to downtown Calgary">
+            <span>Peace Bridge Leading Into Downtown Calgary - Photo by <a href="https://unsplash.com/photos/IzyKe_nNx2A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Riley McNeal</a> on <a href="https://unsplash.com/photos/IzyKe_nNx2A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> - Photoshop Edit by Me - © <?php echo Date('Y') ?></span>
+        </div>
+
     </section>
     <section>
         <div class="headings">
