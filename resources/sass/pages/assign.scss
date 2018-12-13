@@ -4,9 +4,10 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px repeat(4, auto) 50px;
-    grid-row-gap: 50px;
 
     .headings{
+        padding: 50px 0;
+
         h2{
             font-size: 2em;
             text-decoration: none !important;
@@ -36,15 +37,28 @@
     }
 
     section:nth-child(1) {
-        grid-row: 2/3;
+        
+        grid-row: 1/3;
     }
     section:nth-child(2) {
+        background: linear-gradient(to bottom, rgba(51,51,51,1) 0%,rgba(51,51,51,.85) 33%, rgba(51,51,51,.85) 66%, rgba(51,51,51,1) 100%), url(/img/backgrounds/PHP-logo.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
         grid-row: 3/4;
     }
     section:nth-child(3) {
+        background: linear-gradient(to bottom, rgba(51,51,51,1) 0%,rgba(51,51,51,.85) 33%, rgba(51,51,51,.85) 66%, rgba(51,51,51,1) 100%), url(/img/backgrounds/javascript-logo.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
         grid-row: 4/5;
     }
     section:nth-child(4) {
+        background: linear-gradient(to bottom, rgba(51,51,51,1) 0%,rgba(51,51,51,.90) 33%, rgba(51,51,51,.90) 66%, rgba(51,51,51,1) 100%), url(/img/backgrounds/HTML-CSS-logo.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
         grid-row: 5/6;
     }
 }
