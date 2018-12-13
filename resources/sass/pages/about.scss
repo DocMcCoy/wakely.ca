@@ -29,7 +29,7 @@
         width: 100%;
         object-fit: cover;
         object-position: 50% 50%;
-        grid-area: c;
+        grid-area: d;
     }
 
     #about-img-three {
@@ -44,9 +44,11 @@
 @media only screen and (min-width: 766px) {
     .about-main {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(1000px);
+        grid-auto-rows: min-content;
         grid-template-areas:
         "a b"
-        "c d";
+        "c b"
+        "d e"
+        "d f";
     }
 }

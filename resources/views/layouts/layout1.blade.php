@@ -86,7 +86,7 @@
                 <a href="https://bitbucket.org/DocMcCoy/"><i class="fab fa-bitbucket"></i></a>
                 </div>
             </div>
-            <span>Copyright © <?php echo date("Y"); ?> David Wakely - <a href="#">Privacy Policy</a></span>            
+            <span>Copyright © <?php echo date("Y"); ?> David Wakely - <a href="/privacy">Privacy Policy</a></span>            
         </footer>  
     </div>
 </body>

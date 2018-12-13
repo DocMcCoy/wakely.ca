@@ -34,6 +34,9 @@ Route::post('/contact', 'ContactController@makeContact');
 Route::get('/card', function () {
     return view('card');
 });
+Route::get('/privacy', function () {
+    return view('privacy');
+});
 
 Route::get('/goback', 'GoBackController@goBack');
 
