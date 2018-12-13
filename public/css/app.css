@@ -11348,6 +11348,11 @@ footer ul {
   padding: 5px 20px;
 }
 
+.required {
+  color: red;
+  text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+}
+
 .contact-main {
   background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(33%, rgba(0, 0, 0, 0.5)), color-stop(66%, rgba(0, 0, 0, 0.5)), to(black)), url(/img/map.png);
   background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.5) 33%, rgba(0, 0, 0, 0.5) 66%, black 100%), url(/img/map.png);

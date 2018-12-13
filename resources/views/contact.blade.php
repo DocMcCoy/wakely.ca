@@ -37,6 +37,7 @@
     @else
     <form action="/contact#contact-form" method="post" class="contact-form" id="contact-form">
         {{ csrf_field() }}
+        <span class="required">All fields required.</span>
         <div class=form-label-and-error>
             <label for="contacName">Name: </label>
             @if ($errors->has('contactName'))
