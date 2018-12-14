@@ -38,17 +38,17 @@
         </article>
     </section>
     <section>
-        <div class="summary-image">
-            <img src="/img/calgary-full-moon.jpg" alt="Full Moon Over Downtown Calgary circa 2018">
+        <div class="summary-image mySlides">
+            <img id="splash-img-1" src="/img/calgary-full-moon.jpg" alt="Full Moon Over Downtown Calgary circa 2018">
             <span>Downtown Calgary circa February 2018 - Photo by Me - © <?php echo Date('Y') ?></span>
         </div>
-        <div class="summary-image">
-            <img src="/img/peace-bridge-calgary-wakely-home-page.jpg" alt="Peace Bridge leading to downtown Calgary">
+        <div class="summary-image mySlides">
+            <img id="splash-img-2" src="/img/peace-bridge-calgary-wakely-home-page.jpg" alt="Peace Bridge leading to downtown Calgary">
             <span>Peace Bridge Leading Into Downtown Calgary - Photo by <a href="https://unsplash.com/photos/IzyKe_nNx2A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Riley McNeal</a> on <a href="https://unsplash.com/photos/IzyKe_nNx2A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> - Photoshop Edit by Me - © <?php echo Date('Y') ?></span>
         </div>
-        <div class="summary-image">
-            <img src="/img/calgary-tower-wakely.jpg" alt="Peace Bridge leading to downtown Calgary">
-            <span>Calgary Tower from Centre Street - Photo by  on Unsplash <a href="https://unsplash.com/photos/cmk_zYwlQ5A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">asweseeit.ca CANADA</a> on <a href="https://unsplash.com/photos/cmk_zYwlQ5A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> - Photoshop Edit by Me - © <?php echo Date('Y') ?></span>
+        <div class="summary-image mySlides">
+            <img id="splash-img-3" src="/img/calgary-tower-wakely.jpg" alt="Peace Bridge leading to downtown Calgary">
+            <span>Calgary Tower from Centre Street - Photo by <a href="https://unsplash.com/photos/cmk_zYwlQ5A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">asweseeit.ca CANADA</a> on <a href="https://unsplash.com/photos/cmk_zYwlQ5A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> - Photoshop Edit by Me - © <?php echo Date('Y') ?></span>
         </div>
 
     </section>

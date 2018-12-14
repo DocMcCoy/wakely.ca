@@ -27,7 +27,7 @@
     .uo-project-card {
         grid-row: 3/4;
         margin-bottom: 20px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
         a {
             height: 100%;
             display: grid;
@@ -80,6 +80,7 @@
                 }
                 p{
                     grid-row: 3/4;
+                    text-align: left;
                 }
             }
         }
@@ -87,7 +88,7 @@
 
     .pa-project-card {
         grid-row: 4/5;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
         a {
             height: 100%;
             display: grid;
@@ -139,6 +140,7 @@
                 }
                 p{
                     grid-row: 3/4;
+                    text-align: right;
                 }
             }
         }
@@ -185,6 +187,9 @@
                 .uo-info {
                     grid-column: 2/-1;
                     padding: 1em;
+                    P{
+                        text-align: justify;
+                    }
                 }
             }
         }
@@ -221,6 +226,10 @@
                 .pa-info {
                     grid-column: 1/2;
                     padding: 1em;
+
+                    P { 
+                        text-align: left;
+                    }
                 }
             }
         }

@@ -32,7 +32,7 @@
         <a href="http://facebrick.ca" target="_blank"><img src="/img/screenshots/facebrick-logo.jpg" title="Facebrick Logo for facebrick.ca - social media site for mini-figs" alt="Facebrick Logo for facebrick.ca - social media site for mini-figs"></a>
         <span>Logo for the facebrick.ca website - mash up of the facebook font and the colours from the Lego logo - Created by Me - © <?php echo Date('Y') ?></span>
         <h3><a href="http://facebrick.ca" target="_blank">facebrick.ca</a></h3>
-        <p>This is the final project that was asked for in our PHP course. This course introduced us to the world of PHP and also the idea of MVC.</p>
+        <p>This is the final project that was asked for in our PHP course. This course introduced us to the world of PHP and also the idea of MVC. This guy is up and running and I intend to keep adding more and more features. Feel free to register and start talking to the other mini-figs.</p>
     </article>
 </section>
 
