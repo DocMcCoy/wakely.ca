@@ -40,23 +40,23 @@
     <h2>JavaScript</h2>
     <p class="assign-js-p">Heather Tovey was our instructor for this and even though she was a great instructor this is where I really wondered if I had gotten in over my head at the start. Having 0 programming experience meant I was playing catch up for even the basic concepts. I feel like I started catching my stride about mid-course. After having done a little PHP, I was able to come back to this and feel like I had a much better grasp.</p>
     <article class="html-js">
-        <a href="https://docmccoy.github.io/sait-js/final_project/" target="_blank"><img src="/img/screenshots/imperial-travel-agency-1.jpg" alt="Screenshot of the Imperial Travel Agency Homepage" title="Screenshot of the Imperial Travel Agency Homepage"></a>
+        <a href="https://docmccoy.github.io/sait/2018/js/final_project/contact.html" target="_blank"><img src="/img/screenshots/imperial-travel-agency-1.jpg" alt="Screenshot of the Imperial Travel Agency Homepage" title="Screenshot of the Imperial Travel Agency Homepage"></a>
         <span>Testing</span>
-        <h3><a href="https://docmccoy.github.io/sait-js/final_project/" target="_blank">Imperial Travel Agency</a></h3>
+        <h3><a href="https://docmccoy.github.io/sait/2018/js/final_project/contact.html" target="_blank">Imperial Travel Agency</a></h3>
         <p>This was our final project in the JavaScript course. We were tasked with creating a 4 page website with a number of javascript elements.</p> 
     </article>
     
     <article class="html-js">
-        <a href="https://docmccoy.github.io/sait-js/day7/exercise/" target="_blank"></a><img src="/img/screenshots/lyrics-app-screenshot.jpg" alt="Screenshot of the Lyrics app built in Sait Web Dev Javascript Class" title="Lyrics App Screenshot">
+        <a href="https://docmccoy.github.io/sait/2018/js/day7/exercise/" target="_blank"><img src="/img/screenshots/lyrics-app-screenshot.jpg" alt="Screenshot of the Lyrics app built in Sait Web Dev Javascript Class" title="Lyrics App Screenshot"></a>
         <span>Screenshot of the JavaScript based Lyrics App</span>
-        <h3><a href="https://docmccoy.github.io/sait-js/day7/exercise/" target="_blank">Day 7 Exercise - Lyrics</a></h3>
+        <h3><a href="https://docmccoy.github.io/sait/2018/js/day7/exercise/" target="_blank">Day 7 Exercise - Lyrics</a></h3>
         <p>A fun exercise in the JavaScript course involving retrieving data from a song lyric API.</p>
     </article>
     
     <article class="html-js">
-        <a href="https://docmccoy.github.io/sait-js/day6/exercise/" target="_blank"><img src="/img/screenshots/colour-palette-screenshot.jpg" alt="Screenshot of the Colour Palette app built in the Sait Web Dev Javascript Class" title="Colour Palette Generator App Screenshot"></a>
+        <a href="https://docmccoy.github.io/sait/2018/js/day6/exercise/" target="_blank"><img src="/img/screenshots/colour-palette-screenshot.jpg" alt="Screenshot of the Colour Palette app built in the Sait Web Dev Javascript Class" title="Colour Palette Generator App Screenshot"></a>
         <span>Screenshot of the JavaScript based Colour Palette Generator</span>
-        <h3><a href="https://docmccoy.github.io/sait-js/day6/exercise/">Day 6 Exercise - Color Palette Generator</a></h3>
+        <h3><a href="https://docmccoy.github.io/sait/2018/js/day6/exercise/">Day 6 Exercise - Color Palette Generator</a></h3>
         <p>This is where getting the code to do what I want started to take shape ... a color palette generator. Fully responsive.</p>
     </article>
 </section>
