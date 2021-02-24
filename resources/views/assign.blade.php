@@ -65,22 +65,22 @@
     <h2>HTML & CSS</h2>
     <p class="assign-html-p">Off to the races. After a brief introduction into the concept of design, we jumped into getting some markup done with our instructor Gary Jennings. While I have never played with a markup language before, I understood the basic formatting of the code pretty quickly. Gary made it pretty easy to understand the concepts and provided a ton of additional reference material.</p>
     <article class="html-js">
-        <a href="https://docmccoy.github.io/Assignment4/" target="_blank"><img src="/img/screenshots/html-assignment-4-screenshot.jpg" alt="Screenshot of the 4th & final assignment in the HTML course from Sait's Web Dev program" title="HTML Final Assignment Screenshot"></a>
+        <a href="https://docmccoy.github.io/sait/2018/html/assignment4/" target="_blank"><img src="/img/screenshots/html-assignment-4-screenshot.jpg" alt="Screenshot of the 4th & final assignment in the HTML course from Sait's Web Dev program" title="HTML Final Assignment Screenshot"></a>
         <span>Screenshot of the HTML Final Assignment</span>
-        <h3><a href="https://docmccoy.github.io/Assignment4/" target="_blank">Final Assignment HTML</a></h3>
+        <h3><a href="https://docmccoy.github.io/sait/2018/html/assignment4/" target="_blank">Final Assignment HTML</a></h3>
         <p>Goal was to create a fully responsive 4 page static website. Also implemented our first little bit of JavaScript with the addition of the mobile menu.</p>
     </article>
     
     <article class="html-js">
-        <a href="https://docmccoy.github.io/Assignment3/" target="_blank"><img src="/img/screenshots/html-assignment-3-screenshot.jpg" alt=""></a>
+        <a href="https://docmccoy.github.io/sait/2018/html/assignment3/" target="_blank"><img src="/img/screenshots/html-assignment-3-screenshot.jpg" alt=""></a>
         <span>Screenshot of the 3rd Assignment in the HTML Course</span>
-        <h3><a href="https://docmccoy.github.io/Assignment3/" target="_blank">Assignment 3 in HTML</a></h3>
+        <h3><a href="https://docmccoy.github.io/sait/2018/html/assignment3/" target="_blank">Assignment 3 in HTML</a></h3>
         <p>Created a single page static site with various CSS effects that is fully responsive. Modeled after the Untitled Offroad website that I maintain. This in turn has inspired a number of changes that will be implemented on the actual Untitled Offroad website.</p>
     </article>
     <article class="html-js">
-        <a href="https://docmccoy.github.io/Assignment2/" target="_blank"><img src="/img/screenshots/html-assignment-2-screenshot.jpg" alt=""></a>
+        <a href="https://docmccoy.github.io/sait/2018/html/assignment2/" target="_blank"><img src="/img/screenshots/html-assignment-2-screenshot.jpg" alt=""></a>
         <span>2nd HTML Assignment Screenshot</span>
-        <h3><a href="https://docmccoy.github.io/Assignment2/" target="_blank">Assignment 2 in HTML</a></h3>
+        <h3><a href="https://docmccoy.github.io/sait/2018/html/assignment2/" target="_blank">Assignment 2 in HTML</a></h3>
         <p>Just testing various ideas and concepts of using an applying CSS to our markup. Very cool to see how far we've come.</p>
     </article>
 </section>
