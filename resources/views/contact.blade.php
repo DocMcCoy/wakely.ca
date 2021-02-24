@@ -28,7 +28,7 @@
         <h4>Mail:</h4>
         <p>PO Box 46034 Inglewood, Calgary, AB, T2G5H7, CANADA</p>
     </section>
-    <iframe src="https://snazzymaps.com/embed/117752" width="100%" style="border:none;"></iframe>
+    <iframe src="https://snazzymaps.com/embed/161196" width="100%" style="border:none;"></iframe>
     
     @if(session()->has('success'))
     <div class="submit-success" id="contact-form">
